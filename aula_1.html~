@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-06-21 Mon 22:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ez3qu13l" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga6928c4">1. Eletrostática</a>
+<ul>
+<li><a href="#org9cf7940">1.1. Lei de Coulomb</a></li>
+<li><a href="#org7f72859">1.2. O Campo Elétrico</a></li>
+<li><a href="#org354c4a2">1.3. O Potencial Eletrostático</a>
+<ul>
+<li><a href="#org15ad60b">1.3.1. Exemplos Resolvidos</a></li>
+</ul>
+</li>
+<li><a href="#org6a954b4">1.4. Condutores e Isolantes</a></li>
+<li><a href="#org876e1dd">1.5. A Lei de Gauss</a>
+<ul>
+<li><a href="#org8c3d363">1.5.1. Verificação da Lei de Gauss</a></li>
+<li><a href="#org0c56b29">1.5.2. Exemplos Resolvidos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga6928c4" class="outline-2">
+<h2 id="orga6928c4"><span class="section-number-2">1</span> Eletrostática</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Lista 1: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.9, 2.12, 2.16, 2.19, 2.21. Reitz, Milford \&amp; Christy, pgs. 57-59
+</p>
+
+<p>
+Neste capítulo damos o início ao estudo da teoria eletromagnética, para isso, consideramos primeiramente o conceito de carga elétrica. Quando esfregamos um bastão de borracha em um pedaço de lã, percebemos que estes materiais ficam carregados. Neste processo, ocorre uma transferência de cargas elétricas de um material para o outro através do atrito dos materiais, estas cargas estão associadas à partículas elementares, especificamente a elétrons.  É importante notar que esta transferência de elétrons não implica na criação ou destruição de cargas, ou seja, antes e após o processo de transferência a soma das cargas permanece a mesma. Com efeito, parte dos elétrons da lã são transferidas para o bastão de borracha deixando este negativamente carregado (com excesso de elétrons) e a lã positivamente carregada (com falta de elétrons).  Existem dois tipos de carga elétrica, que denominamos positiva e negativa. A carga em si é uma propriedade intrínseca da matéria e está associada à partículas elementares. A matéria é constituída por prótons, elétrons e nêutrons. Os prótons são positivamente carregados e os elétrons possuem carga negativa. Os nêutrons, por outro lado, não apresentam carga. Assim, desde que estas partículas são os constituintes dos átomos, a matéria é dotada de uma grande quantidade de cargas positiva e negativa. A despeito deste fato, não observamos efeitos de tais cargas desde que a quantidade de cargas positiva e negativa é aproximadamente igual e assim, nenhum efeito macroscópico é observado.
+</p>
+
+<p>
+Para fixar as nomenclaturas a serem usadas ao longo do curso, quando nos referimos à carga elétrica do ponto de vista macroscópico, estamos nos referindo à carga líquida, i.e, à quantidade de carga elétrica descompensada ou excesso de carga elétrica. Este excesso pode ser tanto de elétrons (carga negativa) ou de prótons (carga negativa).
+</p>
+</div>
+
+
+<div id="outline-container-org9cf7940" class="outline-3">
+<h3 id="org9cf7940"><span class="section-number-3">1.1</span> Lei de Coulomb</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+As experiências com cargas elétricas no final do século 18 podem ser resumidas em três afirmativas:
+</p>
+\begin{enumerate}[(a)]
+\item Existem duas e somente duas espécies de cargas elétricas, hoje denominadas positiva e negativa;
+\item Duas cargas puntuais exercem, entre si, forças que atuam ao longo da linha que as une e que são inversamente proporcionais ao quadrado da distância entre elas;
+\item Estas forças são também proporcionais ao produto das cargas sendo repulsivas para cargas de mesmo sinal e atrativas para cargas de sinais opostos.
+\end{enumerate}
+
+<p>
+As afirmações acima são hoje conhecidas como \textbf{\emph{Lei de Coulomb}} em homenagem à C. A. Coulomb um dos pioneiros no estudo da Eletricidade. Seguindo a notação vetorial que desenvolvemos no capítulo anterior, podemos escrever a lei de Coulomb da seguinte maneira:
+</p>
+\begin{align}\label{coulomb}
+\vec{F}_{1}=C\dfrac{q_{1}q_{2}}{r^{2}_{12}}\dfrac{\vec{r}_{12}}{r_{12}},
+\end{align}
+<p>
+com
+</p>
+\begin{align*}
+\vec{r}_{12}=\vec{r}_{1}-\vec{r}_{2}.
+\end{align*}
+
+<p>
+Na Eq. \eqref{coulomb}, \(\vec{F}_{1}\) é a força sobre a carga \(q_{1}\) exercida pela carga  \(q_{2}\).  As cargas \(q_{1}\) e \(q_{2}\) estão localizadas no espaço nas posições indicadas pelos vetores \(\vec{r}_{1}\) e \(\vec{r}_{2}\) cuja diferença nos fornece a distância entre as cargas. Com efeito, \(\vec{r}_{12}\) é o vetor que vai de \(q_{2}\) a \(q_{1}\) cujo módulo é denotado por \(r_{12}\). Note que \(\vec{r}_{12}/r_{12}=\hat{r}_{12}\) é um vetor de módulo unitário cujo objetivo é apenas denotar a direção e sentido da força que atua sobre a carga.  Vemos então que a força atua em uma direção definida por uma linha que conecta as duas cargas, em conformidade com a segunda afirmação decorrente do experimento.
+</p>
+
+<p>
+Para encontrar a força sobre a partícula 2 devido à partícula 1, basta apenas permutar os índices 1 e 2. É importante entender todos os elementos da Eq. \eqref{coulomb} pois a notação será largamente utilizada futuramente. Além disso, é importante notar que a Eq. \eqref{coulomb} é aplicada a cargas puntuais, o que é aplicável em sistemas macroscópicos tão logo a distribuição de cargas tenha dimensão muito menor comparada com a escala de comprimento do sistema. A constante de proporcionalidade \(C\) depende do sistema de unidades usado, no caso presente, vamos utilizar o sistema internacional de unidades onde a constante é dada por
+</p>
+\begin{align}\label{constante}
+C=\dfrac{1}{4\pi\epsilon_{0}}, \qquad\epsilon_{0}=8,854\times10^{-12}~\text{C}^{2}/\text{N.m}^{2}
+\end{align}
+<p>
+onde \(\epsilon_{0}\) é a chamada permissividade elétrica do vácuo.
+</p>
+
+<p>
+A Eq. \eqref{coulomb} pode ser generalizada para \(N\) partículas, onde por exemplo a força sobre a $i$-ésima carga devido às demais é dada por:
+</p>
+\begin{align}\label{coulomb2}
+\vec{F}_{i}=q_{i}\sum_{j\neq i}^{N}\dfrac{q_{j}}{4\pi\epsilon_{0}}\dfrac{\vec{r}_{ij}}{r^{3}_{ij}},
+\end{align}
+<p>
+onde \(\vec{r}_{ij}=\vec{r}_{i}-\vec{r}_{j}\).  Este é simplesmente o princípio de superposição das forças que nos diz que a força total sobre uma determinada partícula é a soma vetorial de todas as forças que atuam sobre ela.
+</p>
+
+<p>
+Até aqui, fizemos apenas uma extensão da fórmula de Coulomb para \(N\) cargas puntuais mas ainda não dissemos nada a respeito do valor desta carga. A carga elementar, medida em Coulombs no sistema internacional de unidades,  vale 1,602$&times;10<sup>-19</sup>$~C. Este é um valor extremamente pequeno de modo que macroscópicamente não iremos perceber a granularidade da carga. Mesmo uma quantidade macroscopicamente pequena de carga contém ainda muitos elétrons de modo que é possível considerar a extensão da Eq. \eqref{coulomb2} para uma distribuição contínua de cargas, em analogia ao que usualmente fazemos quando passamos a discutir a dinâmica de corpos rígidos em Mecânica. Assim, considerando esta situação em que estamos longe do limite atômico, podemos definir as densidades superficiais e volumétricas de carga, conforme segue:
+</p>
+\begin{align}\label{rho}
+\rho=\lim_{\Delta V\rightarrow0}\dfrac{\Delta q}{\Delta V}, \qquad(\text{densidade volumétrica de carga}),
+\end{align}
+\begin{align}\label{sigma}
+\sigma=\lim_{\Delta S\rightarrow0}\dfrac{\Delta q}{\Delta S}, \qquad(\text{densidade superficial de carga}).
+\end{align}
+
+<p>
+Notamos que as densidades de carga são referentes à carga líquida ou excesso de carga. Agora considere que temos uma carga \(q\) na presença de uma distribuição volumétrica \(\rho\) e outra densidade superficial de carga caracterizada por \(\sigma\), então a força que estas distribuições exercem sobre uma carga \(q\) localizada na posição \(\vec{r}\) é dada por:
+</p>
+\begin{align}\label{forca:distribuicao}
+\vec{F}_{q}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\int_{V}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\rho(\vec{r}^{\prime})~dV^{\prime}
++
+\dfrac{q}{4\pi\epsilon_{0}}\int_{S}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\sigma(\vec{r}^{\prime})~da^{\prime}.
+\end{align}
+</div>
+</div>
+
+
+<div id="outline-container-org7f72859" class="outline-3">
+<h3 id="org7f72859"><span class="section-number-3">1.2</span> O Campo Elétrico</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Quando colocamos uma carga elétrica na presença de outra carga, a primeira sofre a influência da segunda à distância. Assim, podemos considerar que a força sofrida pela primeira carga é resultado da interação da mesma com o \textbf{\emph{campo elétrico}} produzido pela segunda carga. Para determinar o campo elétrico formalmente, consideramos que a primeira carga é um carga teste, ou seja, uma carga muito pequena de modo que não influencia o campo elétrico produzido pela carga que origina o campo. Neste caso, o campo elétrico \(\vec{E}\) é definido por:
+</p>
+\begin{align}\label{campoeletrico}
+\vec{E}=\lim_{q\rightarrow0}\dfrac{\vec{F}_{q}}{q}
+\end{align}
+<p>
+onde o limite explicita o fato de que a carga teste deve ser muito pequena de maneira a não afetar a distribuição de cargas.
+</p>
+
+<p>
+As expressões anteriores para a força elétrica nos permitem determinar a equação para o campo elétrico. Vamos considerar o caso mais geral possível, onde temos uma distribuição discreta de cargas além de distribuições de volume e superfície. Neste caso a força elétrica sobre uma carga teste \(q\) na posição \(\vec{r}\) é dada por:
+</p>
+\begin{align*}
+\vec{F}_{q}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\sum_{i=1}^{N}q_{i}\dfrac{\vec{r}-\vec{r}_{i}}{|\vec{r}-\vec{r}_{i}|^{3}}
++
+\dfrac{q}{4\pi\epsilon_{0}}\int_{V}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\rho(\vec{r}^{\prime})~dV^{\prime}
++
+\dfrac{q}{4\pi\epsilon_{0}}\int_{S}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\sigma(\vec{r}^{\prime})~da^{\prime}
+\end{align*}
+<p>
+e substituindo esta expressão na Eq. \eqref{campoeletrico} obtemos uma equação geral para o campo elétrico produzido pela distribuição de cargas:
+</p>
+\begin{align}\label{campoeletrico:geral}
+\vec{E}(\vec{r})=\dfrac{1}{4\pi\epsilon_{0}}\sum_{i=1}^{N}q_{i}\dfrac{\vec{r}-\vec{r}_{i}}{|\vec{r}-\vec{r}_{i}|^{3}}
++
+\dfrac{1}{4\pi\epsilon_{0}}\int_{V}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\rho(\vec{r}^{\prime})~dV^{\prime}
++
+\dfrac{1}{4\pi\epsilon_{0}}\int_{S}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\sigma(\vec{r}^{\prime})~da^{\prime}
+\end{align}
+
+<p>
+Note que a expressão para o campo elétrico implica que este é uma função vetorial puntual, \(\vec{E}=\vec{E}(\vec{r})\) e, portanto, é um campo vetorial. Assim, podemos atribuir a cada ponto do espaço um vetor indicando o módulo, direção e sentido do campo elétrico. Uma maneira complementar largamente utilizada para visualizar a forma do campo elétrico foi formulada por M. Faraday e é baseada no conceito de linhas de força. Uma linha de força é uma curva imaginária traçada de forma que sua direção e sentido em qualquer ponto seja o do campo elétrico naquele ponto. No caso de uma carga pontual isolada, as linhas de força estão na direção radial com o sentido saindo da partícula no caso de cargas positivas e entrando na partícula para cargas negativas. Na Fig. \ref{fig1m} temos duas ilustrações das linhas de força para duas cargas elétricas.
+</p>
+\begin{figure}[h]\centering
+\includegraphics[scale=.4]{linhasdecampo2.eps}%fig1.eps
+\caption{\label{fig1m} (a) Linhas de força para duas cargas de sinais opostos. (b) Linhas de forças para duas cargas de mesmo sinal.}
+\end{figure}
+</div>
+</div>
+
+
+<div id="outline-container-org354c4a2" class="outline-3">
+<h3 id="org354c4a2"><span class="section-number-3">1.3</span> O Potencial Eletrostático</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Considerando o campo elétrico na forma dada pela Eq. \eqref{campoeletrico:geral}, vamos calcular \(\nabla\times\vec{E}\) que se reduz à calcular o rotacional da seguinte função vetorial
+</p>
+\begin{align*}
+\nabla\times\left(\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right),
+\end{align*}
+<p>
+que é uma função escalar multiplicada por um vetor. Sabemos das identidades vetoriais do livro-texto que \(\nabla\times(\varphi\vec{G})=\nabla\varphi\times\vec{G}+\varphi\nabla\times\vec{G}\). Assim, usando \(\varphi=|\hat{r}-\hat{r}^{\prime}|^{-3}\) e \(\vec{G}=\vec{r}-\vec{r}^{\prime}\) então podemos escrever a equação acima da seguinte forma:
+</p>
+\begin{align*}
+\nabla\times\left(\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
+=
+\nabla\left(\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)\times(\vec{r}-\vec{r}^{\prime})+\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\nabla\times(\vec{r}-\vec{r}^{\prime})
+\end{align*}
+<p>
+e como \(\hat{r}^{\prime}\) não depende de \(\hat{r}\), ou seja, é uma constante, então sua derivada em relação à \(x,y,z\) é nula e usando \(\nabla\times\vec{r}=0\), podemos escrever simplesmente:
+</p>
+\begin{align*}
+\nabla\times\left(\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
+=
+\nabla\left(\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)\times(\vec{r}-\vec{r}^{\prime})
+\end{align*}
+<p>
+e como a função acima depende apenas do módulo de \(\hat{r}\), podemos escrever
+</p>
+\begin{align*}
+\nabla\left(\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
+=
+\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|}
+\dfrac{d}{dR}\left(\dfrac{1}{R^{3}}\right), \qquad R=|\vec{r}-\vec{r}^{\prime}|
+\end{align*}
+\begin{align*}
+\nabla\left(\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
+=
+-3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|}
+\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{4}}=-3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5}}
+\end{align*}
+<p>
+e vemos que é simplesmente uma função escalar multiplicando um vetor \(\vec{r}-\vec{r}^{\prime}\). Com isso, podemos escrever
+</p>
+\begin{align*}
+\nabla\times\left(\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
+=
+-3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5}}\times(\vec{r}-\vec{r}^{\prime})
+\end{align*}
+<p>
+e como vetores paralelos resultam em produtor vetorial nulo, segue que:
+</p>
+\begin{align*}
+\nabla\times\left(\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)=0.
+\end{align*}
+
+<p>
+Com esta relação geral, podemos mostrar que o rotacional do campo elétrico \(\vec{E}\), dado pela Eq. \eqref{campoeletrico:geral}, é zero. Sendo assim, aplicamos o rotacional em ambos os membros o que nos leva ao resultado,
+</p>
+\begin{align*}
+\nabla\times\vec{E}=0.
+\end{align*}
+<p>
+para o campo eletrostático.
+</p>
+
+<p>
+Com sabemos que \(\nabla\times\nabla\varphi=0\), então podemos expressar o campo elétrico  em termos de um gradiente de uma função escalar. Assim, definimos o chamado \textbf{\emph{potencial elétrico}} \(\varphi(\vec{r})\) por meio da relação
+</p>
+\begin{align}\label{potencial:eltr}
+\vec{E}=-\nabla\varphi(\vec{r}).
+\end{align}
+
+
+<p>
+No caso simples de uma carga puntual, é possível determinar o potencial eletrostático a partir da equação acima e mostrar que este é dado por:
+</p>
+\begin{align}\label{potencial:carga}
+\varphi(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{1}{|\vec{r}-\vec{r}_{q}|}
+\end{align}
+<p>
+onde a carga elétrica está na posição \(\vec{r}_{q}\) e o potencial é medido na posição dada por \(\vec{r}\).
+</p>
+
+<p>
+Partindo da mesma estratégia que adotamos para generalizar o campo elétrico e a força elétrica para distribuições gerais de carga, podemos escrever o potencial elétrico incluindo um número arbitrário de cargas bem com distribuições volumétricas e superficiais da seguinte maneira:
+</p>
+\begin{align}\label{potencialeletrico:geral}
+\varphi(\vec{r})=\dfrac{1}{4\pi\epsilon_{0}}\sum_{i=1}^{N}\dfrac{q_{i}}{|\vec{r}-\vec{r}_{i}|}
++
+\dfrac{1}{4\pi\epsilon_{0}}\int_{V}\dfrac{\rho(\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|}~dV^{\prime}
++
+\dfrac{1}{4\pi\epsilon_{0}}\int_{S}\dfrac{\sigma(\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|}~da^{\prime}
+\end{align}
+<p>
+o que pode ser verificado tomando a gradiente para se chegar à expressão anterior dada pela Eq. \eqref{campoeletrico:geral}.
+</p>
+
+<p>
+Aplicando uma integração sobre o campo elétrico, podemos achar uma expressão explícita para o potencial elétrico a partir do campo \(\hat{E}(\vec{r})\). Assim, fazendo o produto escalar da equação Eq. \eqref{potencial:eltr} com \(d\vec{r}\), obtemos:
+</p>
+\begin{align}\label{potencial:eltr}
+\hat{E}(\vec{r})\cdot d\vec{r}=-\nabla\varphi(\vec{r})\cdot d\vec{r}
+\end{align}
+<p>
+e vemos que o segundo membro se reduz a \(d\varphi\) desde que se trata da relação entre a diferencial total e o gradiente, e integrando, podemos escrever:
+</p>
+\begin{align}\label{potencial:eltr2}
+\int_{\text{ref}}^{\varphi(\vec{r})}\nabla\varphi(\vec{r}^{\prime})\cdot d\vec{r}^{\prime}=\int_{\text{ref}}^{\varphi(\vec{r})}d\varphi=-\int_{\text{ref}}^{\vec{r}}\hat{E}(\vec{r}^{\prime})\cdot d\vec{r}^{\prime}
+\end{align}
+<p>
+onde estamos considerando uma integração desde um ponto tomado com o referência até uma posição $\vec{r}$\footnote{Note que neste último passo trocamos a variável de integração para variáveis com linha para distingui do limite superior que é fixo}. Considerando que neste ponto de referência, usualmente tomado como sendo no infinito (\(\vec{r}\rightarrow\infty\)), o potencial é nulo, podemos escrever:
+</p>
+\begin{align}\label{potencial:eltr3}
+\varphi(\vec{r})=-\int_{\text{ref}}^{\vec{r}}\hat{E}(\vec{r}^{\prime})\cdot d\vec{r}^{\prime}
+\end{align}
+
+<p>
+No caso de uma carga puntual situada da origem, podemos calcular o potencial devido a esta carga por integração direta do campo elétrico cuja expressão é dada pela Eq. \eqref{campoeletrico:geral} fazendo-se \(N=1\), e \(\rho=\sigma=0\):
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{\vec{r}-\vec{r}_{1}}{|\vec{r}-\vec{r}_{1}|^{3}}
+\end{align*}
+<p>
+e como estamos considerando que a carga está localizada na origem então \(\vec{r}_{1}=0\) e assim, podemos escrever:
+</p>
+\begin{align}\label{carga:celetrico}
+\vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{\vec{r}}{r^{3}}
+\end{align}
+<p>
+e substituindo este resultado na expressão dada pela Eq. \eqref{potencial:eltr3}, segue que:
+</p>
+\begin{align*}
+\varphi(\vec{r})=-\dfrac{q}{4\pi\epsilon_{0}}\int_{\infty}^{\vec{r}}\dfrac{\vec{r}^{\prime}}{r^{\prime3}}\cdot d\vec{r}^{\prime}
+\end{align*}
+<p>
+e considerando o fato de que \(\vec{r}^{\prime}\cdot d\hat{r}^{\prime}=r^{\prime}dr^{\prime}\), segue que:
+</p>
+\begin{align*}
+\varphi(\vec{r})=-\dfrac{q}{4\pi\epsilon_{0}}\int_{\infty}^{r}\dfrac{1}{r^{\prime3}}r^{\prime}dr^{\prime}
+=
+-\dfrac{q}{4\pi\epsilon_{0}}\int_{\infty}^{r}\dfrac{dr^{\prime}}{r^{\prime2}}=-\dfrac{q}{4\pi\epsilon_{0}}\left[-\dfrac{1}{r^{\prime}}\right]^{r}_{\infty}
+\end{align*}
+\begin{align}\label{potencial:carga:puntual}
+\varphi(\vec{r})
+=
+\dfrac{q}{4\pi\epsilon_{0}r}
+\end{align}
+<p>
+que é potencial de uma carga puntual situada na origem.
+</p>
+
+<p>
+A força elétrica, assim como a força gravitacional, é uma força conservativa. Assim, é possível definir uma energia potencial elétrica da mesma forma que definimos uma energia potencial gravitacional. Com efeito, a energia potencial é definida como o negativo do trabalho realizado pela força, assim, escrevemos:
+</p>
+\begin{align*}
+\Delta U(\vec{r})=-\int_{\text{ref}}^{\vec{r}}\hat{F}\cdot d\vec{r}
+\end{align*}
+<p>
+e da Eq. \eqref{campoeletrico}, podemos escrever
+</p>
+\begin{align*}
+\Delta U(\vec{r})=-q\int_{\text{ref}}^{\vec{r}}\hat{E}\cdot d\vec{r}
+\end{align*}
+<p>
+e comparando com a equação para o potencial eletrostático \(\varphi\), podemos escrever
+</p>
+\begin{align*}
+\Delta U(\vec{r})=q\varphi(\vec{r})\qquad\therefore\qquad \varphi=\dfrac{\Delta U}{q}
+\end{align*}
+<p>
+e vemos então que o potencial elétrico é simplesmente a energia potencial elétrica por unidade de carga. O fato do campo elétrico ser relacionado ao potencial por meio de \(\vec{E}=-\nabla\varphi\) nos permite mostrar que a integral de caminho da força elétrica é independente do caminho entre dois pontos inicial e final. É esta característica que nos permite definir uma energia potencial associada associada ao trabalho realizado pela força elétrica.
+</p>
+</div>
+
+<div id="outline-container-org15ad60b" class="outline-4">
+<h4 id="org15ad60b"><span class="section-number-4">1.3.1</span> Exemplos Resolvidos</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+\textbf{1. Reitz, Milford \& Christy, Problema 2-1, item~(a).} \emph{Um disco circular, de raio $R$, tem uma densidade superficial uniforme de carga $\sigma$. Determine o campo elétrico em um ponto sobre o eixo do disco a um distância $z$ do plano do disco.}
+</p>
+\begin{center}
+\Large{Solução}
+\end{center}
+
+<p>
+Queremos o campo elétrico, então para isso utilizamos a equação geral para o campo elétrico [Eq. \eqref{campoeletrico:geral}] para uma densidade superficial de carga elétrica. Deste modo, podemos escrever:
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=
+\dfrac{1}{4\pi\epsilon_{0}}\int_{S}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\sigma(\vec{r}^{\prime})~da^{\prime}
+\end{align*}
+<p>
+e desde que a densidade de carga é uniforme, então não depende da posição no disco e podemos tratá-la com constante. Assim, segue que:
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=
+\dfrac{\sigma}{4\pi\epsilon_{0}}\int_{S}\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}~da^{\prime}
+\end{align*}
+<p>
+lembrando que se o disco de raio \(R\) tem uma carga total \(Q\), então \(\sigma=Q/\pi R^{2}\).
+</p>
+
+<p>
+O próximo passo é determinar a forma dos vetores \(\vec{r}\), \(\vec{r}^{\prime}\) e do elemento de área \(da^{\prime}\). Para isso, é dado do enunciado que a posição onde queremos o campo elétrico, determinada por \(\vec{r}\) é ao longo do eixo \(z\), assim, podemos escrever \(\vec{r}=z\knv\). Além disso, como temos um disco, usamos a simetria do mesmo por meio de coordenadas polares planas em que \(x=r\cos\theta\) e \(y=r\sin\theta\). Neste caso \(da^{\prime}=r^{\prime}dr^{\prime}d\theta^{\prime}\). Além disso, \(\vec{r}=r^{\prime}\cos\theta^{\prime}\inv+r^{\prime}\sin\theta^{\prime}\jnv\). Com estes dados, podemos escrever:
+</p>
+\begin{align*}
+\vec{r}-\vec{r}^{\prime}=z\knv-r^{\prime}\cos\theta^{\prime}\inv-r^{\prime}\sin\theta^{\prime}\jnv
+\end{align*}
+<p>
+e,
+</p>
+\begin{align*}
+|\vec{r}-\vec{r}^{\prime}|=\sqrt{z^{2}+r^{\prime2}\cos^{2}\theta^{\prime}+r^{\prime2}\sin^{2}\theta^{\prime}}
+=
+\sqrt{z^{2}+r^{\prime2}}\qquad\therefore\qquad |\vec{r}-\vec{r}^{\prime}|^{3}=[z^{2}+r^{\prime2}]^{3/2}
+\end{align*}
+<p>
+e considerando ainda que \(0<\theta^{\prime}<2\pi\) e \(0<r^{\prime}<R\), podemos escrever o campo elétrico na forma:
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=
+\dfrac{\sigma}{4\pi\epsilon_{0}}
+\int_{0}^{2\pi}\int_{0}^{R}
+\dfrac{(z\knv-r^{\prime}\cos\theta^{\prime}\inv-r^{\prime}\sin\theta^{\prime}\jnv)}{[z^{2}+r^{\prime2}]^{3/2}}~r^{\prime}dr^{\prime}d\theta^{\prime}
+\end{align*}
+\begin{align*}
+\vec{E}(\vec{r})=
+\dfrac{\sigma}{4\pi\epsilon_{0}}
+\int_{0}^{R}\int_{0}^{2\pi}
+\dfrac{(z\knv-r^{\prime}\cos\theta^{\prime}\inv-r^{\prime}\sin\theta^{\prime}\jnv)}{[z^{2}+r^{\prime2}]^{3/2}}~d\theta^{\prime}r^{\prime}dr^{\prime}
+\end{align*}
+<p>
+e as integrais em \(\theta\) do seno e cosseno são nulas. Neste caso, resta apenas o termo correspondente ao eixo \(z\). Com isso, podemos escrever:
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=
+\dfrac{\sigma z\knv}{4\pi\epsilon_{0}}
+\int_{0}^{R}
+\dfrac{1}{[z^{2}+r^{\prime2}]^{3/2}}~r^{\prime}dr^{\prime}\int_{0}^{2\pi}d\theta^{\prime}
+\end{align*}
+<p>
+e resolvendo a integral angular, ficamos com
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=
+\dfrac{2\pi\sigma z\knv}{4\pi\epsilon_{0}}
+\int_{0}^{R}
+\dfrac{r^{\prime}dr^{\prime}}{[z^{2}+r^{\prime2}]^{3/2}}
+\end{align*}
+<p>
+e resta apenas a integral em \(r^{\prime}\). Esta integral pode ser facilmente resolvida fazendo a substituição \(u=z^{2}+r^{\prime2}\), de modo que \(du=2r^{\prime}dr^{\prime}\). Com isso, obtemos:
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=
+\dfrac{2\pi\sigma z\knv}{4\pi\epsilon_{0}}\dfrac{1}{2}
+\int_{z^{2}}^{z^{2}+R^{2}}
+\dfrac{du}{u^{3/2}}
+=
+-\dfrac{2\pi\sigma z\knv}{4\pi\epsilon_{0}}\dfrac{1}{2}2
+\left[\dfrac{1}{\sqrt{z^{2}+R^{2}}}-\dfrac{1}{\sqrt{z^{2}}}\right]
+\end{align*}
+\begin{align*}
+\vec{E}(\vec{r})
+=
+\dfrac{\sigma z\knv}{2\epsilon_{0}}
+\left[\dfrac{1}{z}-\dfrac{1}{\sqrt{z^{2}+R^{2}}}\right]
+\end{align*}
+
+\begin{align*}
+\vec{E}(\vec{r})
+=
+\dfrac{\sigma }{2\epsilon_{0}}
+\left[1-\dfrac{z}{\sqrt{z^{2}+R^{2}}}\right]\knv.
+\end{align*}
+
+<p>
+Esta é a expressão procurada. Mas vamos considerar o caso em que estamos medindo o campo elétrico em uma distância muito grande comparada ao raio do disco. Neste caso, \(z\gg R\), de modo que podemos escrever:
+</p>
+\begin{align*}
+\dfrac{z}{\sqrt{z^{2}+R^{2}}}=\dfrac{1}{\sqrt{1+\dfrac{R^{2}}{z^{2}}}}=\left[1+\dfrac{R^{2}}{z^{2}}\right]^{-1/2}\approx1-\dfrac{R^{2}}{2z^{2}}
+\end{align*}
+<p>
+o que nos permite escrever
+</p>
+\begin{align*}
+\vec{E}(\vec{r})
+\approx
+\dfrac{\sigma }{2\epsilon_{0}}
+\left[1-\left(1-\dfrac{R^{2}}{2z^{2}}\right)\right]\knv=\dfrac{\sigma}{2\epsilon_{0}}
+\dfrac{R^{2}}{2z^{2}}\knv=
+\end{align*}
+<p>
+e usando a densidade de carga na forma \(\sigma=Q/\pi R^{2}\), segue que:
+</p>
+\begin{align*}
+\vec{E}(\vec{r})
+\approx
+\dfrac{Q}{4\pi R^{2}\epsilon_{0}}
+\dfrac{R^{2}}{z^{2}}\knv
+\end{align*}
+
+
+
+
+\begin{align*}
+\vec{E}(z\gg R)
+\approx
+\dfrac{Q}{4\pi\epsilon_{0}z^{2}}\knv
+\end{align*}
+<p>
+que é o campo gerado por uma carga pontual.<br />
+</p>
+
+
+<p>
+\textbf{2. Reitz, Milford \& Christy, Problema 2-6} \emph{Uma casca esférica fina, condutora, de raio $R$, está uniformemente carregada com uma carga total $Q$. Por integração direta, encontre o potencial em um ponto arbitrário (a) no interior da casca (b) fora da casca. }
+</p>
+\begin{center}
+\Large{Solução}
+\end{center}
+
+<p>
+O potencial eletrostático é dado pela Eq. \eqref{potencialeletrico:geral}, adaptada para o caso presente:
+</p>
+\begin{align*}
+\varphi(\vec{r})=
+\dfrac{1}{4\pi\epsilon_{0}}\oint_{S}\dfrac{\sigma(\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|}~da^{\prime}
+\end{align*}
+<p>
+onde indicamos que é uma integração sobre uma superfície fechada. Vamos agora definir cada um dos termos que aparecem na expressão acima. Novamente, usamos a densidade superficial de carga uniforme o que nos permite escrever:
+</p>
+\begin{align*}
+\varphi(\vec{r})=
+\dfrac{\sigma}{4\pi\epsilon_{0}}\oint_{S}\dfrac{da^{\prime}}{|\vec{r}-\vec{r}^{\prime}|}.
+\end{align*}
+
+<p>
+Aqui é conveniente fazer uso das coordenadas polares esféricas, para explorar a simetria da casca. Para isso, sem perda de generalidade assumimos que o ponto onde vamos calcular o campo elétrico é dado por: \(\vec{r}=r\knv\). O vetor \(\vec{r}^{\prime}\) que percorre a casca esférica é dado por:
+</p>
+\begin{align*}
+\vec{r}^{\prime}=R\cos\phi^{\prime}\sin\theta^{\prime}\inv+R\sin\phi^{\prime}\sin\theta^{\prime}\jnv+R\cos\theta^{\prime}\knv
+\end{align*}
+<p>
+onde \(R\) é o raio da casca esférica e os ângulos azimutal \(\phi\) e polar \(\theta\) variam de no intervalo \(0<\phi<2\pi\) e \(0<\theta<\pi\). O elemento de superfície é dado por \(da^{\prime}=R^{2}\sin\theta^{\prime}d\theta^{\prime}d\phi^{\prime}\). O módulo \(|\vec{r}-\vec{r}^{\prime}|\) é dado por:
+</p>
+\begin{align*}
+\vec{r}-\vec{r}^{\prime}
+=
+r\knv-R\cos\phi^{\prime}\sin\theta^{\prime}\inv-R\sin\phi^{\prime}\sin\theta^{\prime}\jnv-R\cos\theta^{\prime}\knv
+\end{align*}
+
+\begin{align*}
+|\vec{r}-\vec{r}^{\prime}|
+=
+\sqrt{(r-R\cos\theta^{\prime})^{2}+R^{2}\cos^{2}\phi^{\prime}\sin^{2}\theta^{\prime}+R^{2}\sin^{2}\phi^{\prime}\sin^{2}\theta^{\prime}}
+=
+\sqrt{r^{2}-2rR\cos\theta^{\prime}+R^{2}}.
+\end{align*}
+
+<p>
+Substituindo os elementos na integração, podemos escrever:
+</p>
+\begin{align*}
+\varphi(r\knv)=
+\dfrac{\sigma}{4\pi\epsilon_{0}}\int_{0}^{2\pi}\int_{0}^{\pi}\dfrac{R^{2}\sin\theta^{\prime}d\theta^{\prime}d\phi^{\prime}}{\sqrt{r^{2}-2rR\cos\theta^{\prime}+R^{2}}}
+\end{align*}
+<p>
+e vemos que a integração em \(\phi^{\prime}\) pode ser realizada imediatamente visto que o integrando não depende de \(\phi^{\prime}\). Assim, ficamos com:
+</p>
+\begin{align*}
+\varphi(r\knv)=
+\dfrac{2\pi R^{2}\sigma}{4\pi\epsilon_{0}}\int_{0}^{\pi}\dfrac{\sin\theta^{\prime}d\theta^{\prime}}{\sqrt{r^{2}-2rR\cos\theta^{\prime}+R^{2}}}
+\end{align*}
+<p>
+e novamente podemos efetuar a integração por substituição direta. Fazendo \(u=r^{2}-2rR\cos\theta^{\prime}+R^{2}\), \(du=2rR\sin\theta^{\prime}d\theta^{\prime}\). Com isso, podemos escrever:
+</p>
+\begin{align*}
+\varphi(r\knv)=
+\dfrac{2\pi R^{2}\sigma}{4\pi\epsilon_{0}}\dfrac{1}{2rR}\int_{(r-R)^{2}}^{(r+R)^{2}}\dfrac{du}{\sqrt{u}}
+=
+\dfrac{2\pi R^{2}\sigma}{4\pi\epsilon_{0}}\dfrac{2}{2rR}[\sqrt{(r+R)^{2}}-\sqrt{(r-R)^{2}}]
+\end{align*}
+
+\begin{align*}
+\varphi(r\knv)=
+\dfrac{\sigma R}{2\epsilon_{0}r}[r+R-|r-R|]
+\end{align*}
+<p>
+e aqui temos duas possibilidades:
+</p>
+\begin{align*}
+\varphi(r\knv)=
+\dfrac{\sigma R}{2\epsilon_{0}r}[r+R-r+R]=\dfrac{QR}{4\pi R^{2}}\dfrac{2R}{2\epsilon_{0}r}=\dfrac{Q}{4\pi\epsilon_{0}r}, \qquad r>R
+\end{align*}
+<p>
+que é o campo elétrico fora da casca.
+</p>
+
+<p>
+Vamos considerar o campo elétrico no interior da casca esférica, i.e., \(r<R\). Neste caso, obtemos:
+</p>
+\begin{align*}
+\varphi(r\knv)=
+\dfrac{\sigma R}{2\epsilon_{0}r}[r+R+r-R|]=\dfrac{\sigma R}{2\epsilon_{0}r}2r=\dfrac{\sigma R}{\epsilon_{0}}=\dfrac{Q}{4\pi\epsilon_{0}R}, \qquad r<R.
+\end{align*}
+
+<p>
+O ponto aqui é verificar que o campo elétrico fora da casca, é referente ao de uma carga puntual e dentro da casca é zero, pois \(\vec{E}=-\nabla\varphi\) e o potencial é constante. Este comportamento é idêntico ao observado para o caso de um campo gravitacional.
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="outline-container-org6a954b4" class="outline-3">
+<h3 id="org6a954b4"><span class="section-number-3">1.4</span> Condutores e Isolantes</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Antes de prosseguir com o estudo da eletrostática, é importante fazer uma observação a respeito dos tipos diferentes de materiais em relação à sua resposta a um campo elétrico. Neste sentido, podemos identificar dois tipos de materiais que denominamos como condutores e isolantes (dielétricos). Os condutores são materiais caracterizados por terem elétrons fracamente ligados aos átomos da rede e, com isso, podem se deslocar quase livremente pelo material. Como resultado, a presença do campo elétrico produz uma corrente elétrica pelo material. Os isolantes, por outro lado, têm seus elétrons fortemente presos aos átomos e o campo elétrico introduz apenas um pequeno reordenamento das cargas em tornos dos íons. Assim, a resposta elétrica de materiais isolantes e condutores são completamente diferentes. No momento, vamos nos concentrar nos materiais condutores que são mais simples de serem tratados e, futuramente, consideraremos os materiais isolantes. A razão para os condutores serem mais simples está relacionado à mobilidade das cargas. Uma vez que um condutor é submetido a um campo elétrico constante no tempo, as cargas elétricas passam a se moverem no condutor até que uma situação de equilíbrio se estabeleça onde as forças resultantes sobre todas as cargas são iguais a zero. No equilíbrio, o interior do condutor apresenta um campo elétrico nulo, pois do contrário, haveriam forças e as cargas se moveriam o que é claramente uma situação de não-equilíbrio. No caso de uma carga ser transferida para um condutor, ou seja, um condutor com uma carga líquida em seu interior, estas cargas irão interagir entre si de maneira que a situação de equilíbrio será estabelecida com as cargas depositadas sobre a superfície deste condutor.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org876e1dd" class="outline-3">
+<h3 id="org876e1dd"><span class="section-number-3">1.5</span> A Lei de Gauss</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Já mostramos que um carga puntual localizada na origem, apresenta um campo elétrico expresso pela Eq. \eqref{carga:celetrico}. O campo elétrico produzido por esta carga apresenta uma orientação radial, ou seja, em cada ponto do espaço podíamos atribuir um vetor com orientação radial cujo sentido era saindo ou entrando na carga elétrica dependendo se esta era positiva ou negativa. Uma maneira alternativa de ilustrar o campo elétrico é por meio das linhas de campo que são trajetórias no espaço tangente ao vetor campo elétrico. É importante notar que essas linhas nunca se cruzam pois em cada ponto do espaço temos apenas um, e somente um, valor para o campo elétrico. Além de ilustrar a orientação do campo elétrico no espaço, também podemos expressar a intensidade do campo elétrico por meio da densidade do número de linhas de campo. Com efeito, o número de linhas de campo que atravessam uma área \(S\) perpendicular às mesmas é proporcional à intensidade do campo elétrico. Para ilustrar, imagine que temos uma superfície esférica envolvendo uma carga elétrica positiva localizada na origem do sistema de coordenadas. Neste caso, se temos \(N\) linhas atravessando esta superfície, o campo elétrico é proporcional à \(N/A\) onde \(A=4\pi R^{2}\) é a área da superfície esférica. Como o número de linhas é fixo, então \(E\propto N/4\pi R^{2}\) e é proporcional ao inverso do quadrado da distância da carga, o que está de acordo com a Eq. \eqref{carga:celetrico}. Além disso, como o número de linhas de campo é proporcional à carga elétrica, então, \(N\propto q\) o que nos permite escrever \(E\propto q/4\pi R^{2}\). De fato a Eq. \eqref{carga:celetrico} nos fornece \(E=q/4\pi\epsilon_{0}R^{2}\) o que nos mostra que o raciocínio baseado nas linhas campo é consistente.
+</p>
+
+<p>
+Antes de discutir propriamente a Lei de Gauss, precisamos da definição do fluxo de um campo vetorial. Para um dado campo qualquer \(\vec{B}\),  o fluxo deste campo é definido da seguinte forma:
+</p>
+\begin{align}\label{fluxo:aberto}
+\Phi_{\vec{B}}=\int_{S}\vec{B}\cdot\hat{n}~da
+\end{align}
+<p>
+onde \(S\) é uma superfície aberta com normal \(\hat{n}\). Note que o fluxo nada mais é que a projeção do vetor \(\vec{B}\) na direção de \(\hat{n}\) o que nos diz que só temos fluxo quando as linhas de campo de \(\vec{B}\) atravessam a superfície \(S\). O fluxo é máximo quando essas linhas incidem perpendicularmente à superfície. Podemos também considerar o fluxo do campo vetorial \(\vec{B}\) encerrado por uma superfície fechada \(S\), onde escrevemos:
+</p>
+\begin{align}\label{fluxo:fechado}
+\Phi_{\vec{B}}=\oint_{S}\vec{B}\cdot\hat{n}~da.
+\end{align}
+
+<p>
+Vamos agora considerar novamente a nossa carga puntual centrada na origem do sistema de coordenadas. Considerando uma superfície esférica e fechada em torno da carga elétrica, então o fluxo do campo elétrico através desta superfície é determinado por meio da combinação das Eqs. \eqref{carga:celetrico} e \eqref{fluxo:fechado}:
+</p>
+\begin{align*}
+\Phi_{\vec{E}}=\oint_{S}\vec{E}\cdot\hat{n}~da=\oint_{S}E\hat{r}\cdot\hat{r}~da
+\end{align*}
+<p>
+e considerando que o módulo do campo elétrico é constante na superfície, segue que:
+</p>
+\begin{align*}
+\Phi_{\vec{E}}=E\oint_{S}\hat{r}\cdot\hat{r}~da=E4\pi r^{2}
+\end{align*}
+<p>
+e substituindo módulo do campo elétrico da Eq. \eqref{carga:celetrico}, obtemos finalmente:
+</p>
+\begin{align*}
+\Phi_{\vec{E}}=\dfrac{q}{4\pi\epsilon_{0}r^{2}}4\pi r^{2}
+\end{align*}
+\begin{align}\label{PhiE}
+\Phi_{\vec{E}}=\dfrac{q}{\epsilon_{0}}.
+\end{align}
+\begin{figure}[!]\centering
+\includegraphics[scale=0.45]{Gausslinhas2.eps}%Gausslinhas.eps
+\caption{\label{fig1}Exemplo de várias superfícies fechadas envolvendo uma carga elétrica. O fluxo elétrico calculado por meio destas superfícies é o mesmo para todas elas.}
+\end{figure}
+
+<p>
+Vemos então que o fluxo elétrico depende apenas da carga elétrica encerrada pela superfície. Além disso, isso evidencia que o fluxo independe do raio da superfície bem como a sua forma. Na Fig. \ref{fig1} temos vários exemplos de superfície envolvendo a carga elétrica e todas são atravessadas pelo mesmo número de linhas de campo, o que pode ser verificado contando-se o número de linhas que atravessam as superfícies. Damos um destaque especial à superfície \(S^{\prime\prime\prime}\) que é uma superfície com uma reentrância onde podemos contar 14 linhas saindo da mesma e 2 entrando o que resulta em um fluxo de 12 linhas como as demais.
+</p>
+
+<p>
+O fato de que qualquer superfície fechada encerra o mesmo fluxo, nos permite a liberdade de escolher a superfície mais conveniente para o cálculo do fluxo elétrico. Desta forma, chamamos de superfície Gaussiana a superfície mais simples que carrega a simetria da distribuição de cargas. De fato, tudo o que foi discutido vale para qualquer distribuição de cargas que esteja encerrada pela superfície Gaussiana desde uma número discreto de cargas à distribuições lineares, superficiais ou volumétricas de carga. Portanto, a igualdade expressa pela Eq. \eqref{PhiE}, calculada por uma única carga pontual, vale para qualquer carga \(q\) que esteja no interior da superfície Gaussiana e podemos expressar isso pela chamada \emph{\textbf{Lei de Gauss}}:
+</p>
+\begin{align}\label{leideGauss}
+\oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}\qquad\text{(Lei de Gauss, primeira lei de Maxwell da eletrostática)}.
+\end{align}
+
+<p>
+A Eq. \eqref{leideGauss} é um dos pilares fundamentais da teoria eletromagnética e é um das equações de Maxwell do eletromagnetismo. A equação acima está escrita na versão de uma equação integral, mas podemos escrevê-la em uma forma diferencial por meio do teorema do divergente. Com efeito, podemos escrever a carga elétrica no interior da superfície \(S\) como uma integral sobre uma densidade volumétrica \(\rho\),
+</p>
+\begin{align*}
+q=\int_{V}\rho(\vec{r}^{\prime})~dV
+\end{align*}
+<p>
+e assim, a lei de Gauss dada pela Eq. \eqref{leideGauss} pode ser expressa na forma
+</p>
+\begin{align*}
+\oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{1}{\epsilon_{0}}\int_{V}\rho(\vec{r}^{\prime})~dV
+\end{align*}
+<p>
+e por meio do teorema do divergente podemos trocar a integração sobre \(S\) em uma integração sobre o volume \(V\):
+</p>
+\begin{align*}
+\int_{V}\nabla\cdot\vec{E}~dV=\dfrac{1}{\epsilon_{0}}\int_{V}\rho(\vec{r}^{\prime})~dV
+\end{align*}
+\begin{align*}
+\int_{V}\left[\nabla\cdot\vec{E}-\dfrac{\rho}{\epsilon_{0}}\right]~dV=0
+\end{align*}
+<p>
+o que nos permite escrever:
+</p>
+\begin{align}\label{leideGauss:diff}
+\nabla\cdot\vec{E}=\dfrac{\rho}{\epsilon_{0}}.
+\end{align}
+</div>
+
+<div id="outline-container-org8c3d363" class="outline-4">
+<h4 id="org8c3d363"><span class="section-number-4">1.5.1</span> Verificação da Lei de Gauss</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<p>
+Podemos derivar a lei de Gauss a partir da equação para o campo elétrico devido à uma distribuição volumétrica de carga. Para isso, partimos da expressão geral:
+</p>
+\begin{align*}
+\vec{E}(\vec{r})=\dfrac{1}{4\pi\epsilon_{0}}\int_{V}\rho(\vec{r}^{\prime})\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}~dV
+\end{align*}
+<p>
+e tomando o divergente de ambos os lados, segue que:
+</p>
+\begin{align}\label{gauss:intermed}
+\nabla\cdot\vec{E}(\vec{r})=\dfrac{1}{4\pi\epsilon_{0}}\int_{V}\rho(\vec{r}^{\prime})\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]~dV
+\end{align}
+<p>
+e vemos que precisamos calcular o divergente do produto de um vetor \(\vec{r}-\vec{r}^{\prime}\) por uma função escalar \(|\vec{r}-\vec{r}^{\prime}|^{-3}\). Neste caso, podemos usar a identidade \(\nabla (\varphi\vec{F})=\nabla\varphi\cdot\vec{F}+\varphi\nabla\cdot\vec{F}\). Com isso, podemos escrever:
+</p>
+\begin{align*}
+\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]
+=
+\nabla(|\vec{r}-\vec{r}^{\prime}|^{-3})\cdot(\vec{r}-\vec{r}^{\prime})+|\vec{r}-\vec{r}^{\prime}|^{-3}\nabla\cdot(\vec{r}-\vec{r}^{\prime}).
+\end{align*}
+
+<p>
+Note que \(\nabla\cdot(\vec{r}-\vec{r}^{\prime})=3\). Além disso, o gradiente da função \(\nabla(|\vec{r}-\vec{r}^{\prime}|^{-3})\) já foi determinado e vale
+</p>
+\begin{align*}
+\nabla\left(\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
+=
+-3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5}}
+\end{align*}
+<p>
+o que nos permite escrever
+</p>
+\begin{align*}
+\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]
+&=
+-3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5}}\cdot(\vec{r}-\vec{r}^{\prime})
++
+3\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}
+\\
+&=
+-3\dfrac{|\vec{r}-\vec{r}^{\prime}|^{2}}{|\vec{r}-\vec{r}^{\prime}|^{5}}
++
+3\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}=0, \qquad\vec{r}\neq\vec{r}^{\prime}
+\end{align*}
+<p>
+onde destacamos que os cálculos acima valem apenas na condição \(\vec{r}\neq\vec{r}^{\prime}\).
+</p>
+
+<p>
+Para resolver a equação acima incluindo o ponto \(\vec{r}=\vec{r}^{\prime}\), usamos o teorema do divergente para transformar a integral de volume em uma integral de superfície:
+</p>
+\begin{align*}
+\int_{V}\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]~dV
+=
+\oint_{S}\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]\cdot\hat{n}~da.
+\end{align*}
+<p>
+como a esfera é centrada no ponto \(\vec{r}^{\prime}\) então a normal é dada por
+</p>
+\begin{align*}
+\hat{n}=\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|}
+\end{align*}
+<p>
+o que nos permite escrever a integral de superfície da seguinte forma:
+</p>
+\begin{align*}
+\oint_{S}\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]\cdot\hat{n}~da
+=
+\oint_{S}\dfrac{da}{|\vec{r}-\vec{r}^{\prime}|^{2}}
+\end{align*}
+<p>
+e como \(|\vec{r}-\vec{r}^{\prime}|=R\) é o raio da esfera, que é uma quantidade fixa, podemos escrever:
+</p>
+\begin{align*}
+\oint_{S}\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]\cdot\hat{n}~da
+=
+\dfrac{1}{R^{2}}\oint_{S}da=\dfrac{1}{R^{2}}4\pi R^{2}=4\pi,
+\end{align*}
+<p>
+que é uma expressão que não depende do raio da esfera e, portanto, inclui também o ponto \(\vec{r}=\vec{r}^{\prime}\), que é o ponto que nos interessa. Como o divergente é nulo para \(\vec{r}\neq\vec{r}^{\prime}\), o resultado \(4\pi\) é oriundo da contribuição da origem onde se situa a carga.
+</p>
+
+<p>
+Para lidar com singularidades como essa, lançamos mão da chamada \emph{função delta de Dirac} que tem as seguinte propriedades:
+</p>
+\begin{align*}
+\int \delta(x-x_{0})~dx=1,
+\\
+\int f(x)\delta(x-x_{0})~dx=f(x_{0})
+\end{align*}
+<p>
+que são válidas somente se o intervalo de integração contenha o valor \(x_{0}\).
+</p>
+
+<p>
+Usando a função delta, podemos reescrever a equação acima para o divergente da seguinte maneira:
+</p>
+\begin{align*}
+\int_{V}\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]~dV
+=
+\int_{V}4\pi\delta(\vec{r}-\vec{r}^{\prime})~dV
+=
+4\pi\int_{V}\delta(\vec{r}-\vec{r}^{\prime})~dV=4\pi\times1=4\pi
+\end{align*}
+<p>
+o que nos leva à seguinte propriedade que nos será extremamente útil:
+</p>
+\begin{align*}
+\int_{V}\left\{\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]-4\pi\delta(\vec{r}-\vec{r}^{\prime})\right\}~dV
+=
+0
+\end{align*}
+<p>
+donde
+</p>
+\begin{align}\label{divergente:util}
+\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]=4\pi\delta(\vec{r}-\vec{r}^{\prime}).
+\end{align}
+
+
+<p>
+Agora que resolvemos o divergente da função acima, estamos aptos a calcular explicitamente o divergente do campo elétrico devido à uma carga puntual. Assim, voltamos à demonstração da lei de Gauss a partir da Eq. \eqref{gauss:intermed},
+</p>
+\begin{align*}
+\nabla\cdot\vec{E}(\vec{r})
+=\dfrac{1}{4\pi\epsilon_{0}}\int_{V}\rho(\vec{r}^{\prime})\nabla\cdot\left[\dfrac{\vec{r}-\vec{r}^{\prime}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right]~dV
+\end{align*}
+\begin{align*}
+\nabla\cdot\vec{E}(\vec{r})
+=\dfrac{1}{4\pi\epsilon_{0}}\int_{V}\rho(\vec{r}^{\prime})4\pi\delta(\vec{r}-\vec{r}^{\prime})~dV
+=
+\dfrac{\rho(\vec{r})}{\epsilon_{0}}
+\end{align*}
+<p>
+ou de modo geral
+</p>
+\begin{align*}
+\nabla\cdot\vec{E}=\dfrac{\rho}{\epsilon_{0}}
+\end{align*}
+<p>
+e integrando obtermos chegamos a lei de Gauss na forma integral.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org0c56b29" class="outline-4">
+<h4 id="org0c56b29"><span class="section-number-4">1.5.2</span> Exemplos Resolvidos</h4>
+<div class="outline-text-4" id="text-1-5-2">
+<p>
+Vamos aplicar a lei de Gauss à alguns casos simples para ilustrar o seu uso e sua simplicidade no cálculo do campo elétrico devido a algumas distribuições de carga.
+</p>
+
+<p>
+\textbf{1.~\textit{Casca esférica de raio $R$ e densidade superficial de carga $\sigma$.}} Já discutimos o cálculo do potencial elétrico produzido por uma casca esférica por meio de integração direta. Agora vamos considerar o campo elétrico por meio da Lei de Gauss.
+</p>
+
+<p>
+Vamos considerar primeiramente o caso em que o ponto de interesse no cálculo do campo elétrico é um ponto \(\vec{r}=r\hat{r}\), tal que \(r<R\) (ou seja, no interior da casca esférica). A forma geral da Lei de Gauss é dada por:
+</p>
+\begin{align*}
+\oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}
+\end{align*}
+<p>
+onde \(q\) é carga no interior da superfície gaussiana. No caso da casca, também consideramos uma superfície gaussiana esférica de raio \(r\). Assim, o vetor normal é \(\hat{r}\) para fora da casca. No interior da casca esférica não temos nenhuma carga livre e assim, podemos escrever:
+</p>
+\begin{align*}
+\oint_{S}E_{r}\hat{r}\cdot\hat{r}~da=\dfrac{0}{\epsilon_{0}}=0
+\end{align*}
+<p>
+o que nos permite escrever
+</p>
+\begin{align*}
+E_{r}\oint_{S}~da=0\qquad\therefore\qquad E_{r}=0.
+\end{align*}
+
+<p>
+Assim, podemos escrever que
+</p>
+\begin{align*}
+\vec{E}=0,\qquad r<R.
+\end{align*}
+
+<p>
+Agora vamos considerar o caso em que temos um ponto fora da casca esférica, ou seja, \(r>R\). Com isso, podemos escrever:
+</p>
+\begin{align*}
+\oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}
+\end{align*}
+<p>
+e considerando que a carga da casca esférica é \(Q\), então a superfície gaussiana esférica de raio \(r>R\) envolve toda a carga. Com isso, podemos escrever:
+</p>
+\begin{align*}
+\oint_{S}E_{r}\hat{r}\cdot\hat{r}~da=\dfrac{Q}{\epsilon_{0}},\qquad E_{r}\oint da=\dfrac{Q}{\epsilon_{0}}
+\end{align*}
+<p>
+com isso, chegamos a
+</p>
+\begin{align*}
+E_{r}4\pi r^{2}=\dfrac{Q}{\epsilon_{0}}
+\end{align*}
+<p>
+o que nos permite escrever
+</p>
+\begin{align*}
+E_{r}=\dfrac{Q}{4\pi\epsilon_{0}r^{2}}
+\end{align*}
+<p>
+ou ainda na forma vetorial
+</p>
+\begin{align*}
+\vec{E}(r)=\dfrac{Q}{4\pi\epsilon_{0}r^{2}}\hat{r},\qquad r>R.
+\end{align*}
+
+
+
+<p>
+Uma vez que temos a expressão para os campos elétricos, podemos determinar os valores dos potenciais elétricos. Para isso, relembramos a expressão geral para o potencial elétrico que é dada por:
+</p>
+\begin{align*}
+\varphi(\vec{r})=\varphi(\text{ref})-\int_{\text{ref}}^{\vec{r}}\vec{E}\cdot d\vec{r}
+\end{align*}
+<p>
+e vamos determinar o campo elétrico fora da casca esférica de modo que \(\varphi(\vec{r}\rightarrow\infty)=0\).
+</p>
+\begin{align*}
+\varphi(\vec{r})=-\int_{\infty}^{\vec{r}}\vec{E}\cdot d\vec{r}
+\end{align*}
+
+\begin{align*}
+\varphi(\vec{r})=-\int_{\infty}^{r}\dfrac{Q}{4\pi\epsilon_{0}r^{2}}\hat{r}\cdot \hat{r}dr
+\end{align*}
+
+\begin{align*}
+\varphi(\vec{r})=-\dfrac{Q}{4\pi\epsilon_{0}}\int_{\infty}^{r}\dfrac{dr}{r^{2}}=\dfrac{Q}{4\pi\epsilon_{0}r}
+\end{align*}
+
+\begin{align*}
+\varphi(\vec{r})=\dfrac{Q}{4\pi\epsilon_{0}r}, \qquad r>R
+\end{align*}
+
+<p>
+Considerando que o campo elétrico na superfície da esfera é simplesmente obtido fazendo \(r=R\) na expressão acima, podemos escrever:
+</p>
+\begin{align*}
+\varphi(R)=\dfrac{Q}{4\pi\epsilon_{0}R}, \qquad r=R.
+\end{align*}
+
+<p>
+Agora estamos aptos a calcular o potencial elétrico no interior da casca esférica. Assim, podemos escrever:
+</p>
+\begin{align*}
+\varphi(\vec{r})=\varphi(R)-\int_{R}^{\vec{r}}\vec{E}\cdot d\vec{r}
+\end{align*}
+<p>
+e como o campo elétrico no interior da casca esférica é zero, então
+</p>
+\begin{align*}
+\varphi(\vec{r})=\varphi(R)
+\end{align*}
+<p>
+e substituindo o valor potencial elétrico na superfície da esfera, segue que:
+</p>
+\begin{align*}
+\varphi(\vec{r})=\dfrac{Q}{4\pi\epsilon_{0}R},\qquad r<R.
+\end{align*}
+
+
+<p>
+\textbf{2.~\textit{Fio retilíneo infinito com densidade linear de cargas $\lambda$.}} Vamos considerar uma superfície gaussiana de forma cilíndrica em torno do fio. Assim, como o campo elétrico tem simetria radial, podemos escrever \(\vec{E}=E\hat{\rho}\), onde o versor \(\hat{\rho}\)  é definido no plano \(xy\) e o fio está dirigido ao longo do eixo \(z\).
+</p>
+
+<p>
+Assim, podemos escrever
+</p>
+\begin{align*}
+\oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}
+\end{align*}
+<p>
+e particularizando para o caso do fio, segue que:
+</p>
+\begin{align*}
+\int_{S_{1}}\vec{E}\cdot\hat{n}_{1}~da+\int_{S_{2}}\vec{E}\cdot\hat{n}_{2}~da+\int_{S_{3}}\vec{E}\cdot\hat{n}_{3}~da
+=
+\dfrac{1}{\epsilon_{0}}\int_{\text{fio}}\lambda~dl
+\end{align*}
+<p>
+onde as superfícies \(S_{1}\) e \(S_{2}\) são as tampas do cilindro com normais \(\knv\) e \(-\knv\). As contribuições destas superfícies são nulas porque o campo elétrico é radial, e portanto, perpendicular ao eixo \(z\). Resta ainda a superfície \(S_{3}\) que é a área lateral do cilindro com normal \(\hat{n}_{3}=\hat{\rho}\). Com isso, podemos escrever:
+</p>
+\begin{align*}
+\int_{\text{lateral}}E_{\rho}\hat{\rho}\cdot\hat{\rho}~da
+=
+\dfrac{1}{\epsilon_{0}}\int_{\text{fio}}\lambda~dl
+\end{align*}
+<p>
+o que pode ser escrito na forma
+</p>
+\begin{align*}
+\int_{0}^{2\pi}\int_{-\infty}^{+\infty}E_{\rho}\hat{\rho}\cdot\hat{\rho}~Rd\phi dz
+=
+\dfrac{1}{\epsilon_{0}}\int_{-\infty}^{\infty}\lambda~dz
+\end{align*}
+
+\begin{align*}
+2\pi R E_{\rho}\int_{-L/2}^{+L/2}~ dz
+=
+\dfrac{\lambda}{\epsilon_{0}}\int_{-L/2}^{L/2}~dz
+\end{align*}
+<p>
+onde consideramos uma superfície Gaussiana de comprimento \(L\). Simplificando, obtemos o resultado final:
+</p>
+\begin{align*}
+\vec{E}
+=
+\dfrac{\lambda}{2\pi \epsilon_{0}R}\hat{\rho}.
+\end{align*}
+
+<p>
+\textbf{3.~\textit{Campo elétrico de um plano infinito de cargas negativas.}} Aqui novamente consideramos uma superfície gaussiana cilíndrica. Neste caso, o campo elétrico é perpendicular ao plano infinito de modo que este é normal às tampas do cilindro e assim, a contribuição da superfície lateral é nula pois o campo elétrico é perpendicular a esta superfície. Com isso, podemos escrever:
+</p>
+\begin{align*}
+\int_{S_{1}}\vec{E}\cdot\hat{n}_{1}~da+\int_{S_{2}}\vec{E}\cdot\hat{n}_{2}~da+\int_{S_{3}}\vec{E}\cdot\hat{n}_{3}~da
+=
+\dfrac{\sigma}{\epsilon_{0}}\int_{\text{plano}}~da
+\end{align*}
+
+\begin{align*}
+\int_{S_{1}}E_{z}(\knv)\cdot(-\knv)~da+\int_{S_{2}}E_{z}(-\knv)\cdot\knv~da
+=
+\dfrac{\sigma}{\epsilon_{0}}\int_{\text{plano}}~da
+\end{align*}
+
+
+\begin{align*}
+-E_{z}\pi r^{2}-E_{z}\pi r^{2}
+=
+\dfrac{\sigma}{\epsilon_{0}}\pi r^{2}\qquad\therefore\qquad E_{z}=-\dfrac{\sigma}{2\epsilon_{0}}
+\end{align*}
+<p>
+que pode ser escrito na forma:
+</p>
+\begin{align}\label{E:planodecargas}
+\vec{E}=\dfrac{\sigma}{2\epsilon_{0}}\hat{n}
+\end{align}
+<p>
+onde absorvemos o sinal da densidade de cargas no sinal da normal ao plano. Note que o campo elétrico gerado pelo plano infinito é independente da distância do ponto ao plano. Note que perto do plano, o campo elétrico é oriundo das cargas do plano, próximas ao ponto considerado. As contribuições de regiões no plano distantes do ponto tem componentes do campo aproximadamente paralelas e assim, as componentes perpendiculares destes pontos são desprezíveis. No caso em que o ponto está longe do plano, as contribuições das cargas longe do ponto considerado têm componentes praticamente perpendiculares a ele o que ajuda a compensar a redução da intensidade do campo elétrico devido às regiões próximas à projeção do ponto no plano. No final das contas, a intensidade do campo elétrico permanece constante.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ez3qu13l</p>
+<p class="date">Created: 2021-06-21 Mon 22:33</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
